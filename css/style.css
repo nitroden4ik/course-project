@@ -474,7 +474,6 @@ padding:  16px 32px;
   }
   
 .swiper-slide {
-	
 	width: 352px;
 	padding: 24px 16px 0;
 	border: #76B900 solid;
@@ -497,7 +496,7 @@ padding:  16px 32px;
 }
   
   .swiper-button-prev {
-	background-image: url(/img/chevron-circle-left.svg);
+		background-image: url(/img/chevron-circle-left.svg);
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -518,6 +517,64 @@ padding:  16px 32px;
 }
 
 .swiper-pagination {
-	padding-top: 200px;
+	margin-top: 200px;
 }
 
+.homeSubscriptions_warning {
+	text-align: center;
+	margin-top: 48px;
+	color: #999;
+}
+
+.wall {
+
+	overflow: hidden;
+    position: relative;
+    text-align: center;
+		padding: 64px 0;
+}
+
+.wall_title {
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 48px;
+	margin-bottom: 16px;
+}
+
+.wall_text {
+	font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 56px;
+}
+
+.wall_row {
+	height: 120px;
+    width: 1580px;
+	animation: slideGames 30s infinite;
+	background-repeat: repeat-x;
+		
+}
+
+.wall_row,.row01 {
+	background-image: url(/img/row1-lg.png);
+	background-repeat: repeat-x;
+}
+
+.row02 {
+	background-image: url(/img/row2-lg.png);
+}
+
+.row03 {
+	background-image: url(/img/row3-lg.png);
+}
+
+@keyframes slideGames {
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(-1395px);
+
+	}
+	
+}
