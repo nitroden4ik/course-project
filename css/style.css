@@ -38,12 +38,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
 	background-color: #111;
+
 }
 
 div {
 	display: block;
 }
-
 
 .content {
 	margin: 0 auto;
@@ -109,7 +109,6 @@ div {
 
 .logo {
     width: 180px;
-    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -860,8 +859,6 @@ padding:  16px 32px;
 
 .download-section {
 	margin-top: 150px;
-	
-	
 }
 
 .download-section-title {
@@ -880,7 +877,6 @@ padding:  16px 32px;
 }
 
 .win-img  img{
-
     height: 88px;
     width: 88px;
 	
@@ -896,15 +892,13 @@ padding:  16px 32px;
 
 .download-section-btns {
 	display: flex;
-
 	margin: 0 -16px 32px;
 }
 
 .download-section-btn {
-	width: 480px;
+	width: 545px;
 	height: 56px;
 	margin: 0 auto;
-
 }
 
 .download-section-wrapper {
@@ -922,7 +916,14 @@ padding:  16px 32px;
 	display: flex;
 	flex-direction: column;
 	padding: 0 0 48px;
+	line-height: 34px;
 }
+
+.download-text {
+	font-size: 20px;
+}
+
+
 
 .download-section-divider {
 	color: white;
@@ -931,3 +932,97 @@ padding:  16px 32px;
     width: 100%;
 	background-color: #333;
 }
+
+.download-section-text p {
+	margin-bottom: 24px;
+}
+
+.container .h3 {
+	margin-bottom: 24px;
+}
+
+/* welcome page */
+
+.welcome-section {
+  padding-top: 160px;
+  background-image: url(/img/hero-xl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+	height: 804px;
+}
+
+.welcome-section-cloud{
+	height: 870px;
+}
+
+.welcome-section-cloud .container {
+	margin-top: 88px;
+}
+
+
+.welcome-section-title {
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 56px;
+	margin-bottom: 32px;
+	text-transform: uppercase;
+}
+
+.welcome-section-text{
+font-size: 32px;
+    line-height: 40px;
+
+		width: 736px;
+
+}
+
+.welcome-section-more {
+font-size: 24px;
+height: 96px;
+padding-bottom: 164px;
+}
+
+
+
+
+
+	@keyframes arrow-down {
+		0% {
+			border-color: white;
+    opacity: .6;
+    transform: translate(0);
+		}
+		20% {
+			border-color: white;
+			opacity: .8;
+			transform: translate(12px,12px);
+		}
+		20.1%, 100% {
+			border-color: grey;
+			opacity: 1;}
+	};
+
+
+
+
+	.welcome-section-cloud-wrap {
+		display: flex;
+
+	}
+	
+.welcome-section-left-col {
+	width: 536px;
+}
+
+.welcome-section-right-col {
+width: 212px;
+}
+	
+	.welcome-section-cloud-title {
+		font-family: 'Rubik',sans-serif;
+		font-size: 40px;
+line-height: 48px;
+font-style: normal;
+font-weight: 400;
+	}
