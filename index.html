@@ -1,69 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GFN.RU</title>
     <link rel="stylesheet" href="css/style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-      />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
   <body class="content">
     <header class="header">
       <div class="header_left">
-        <a href="index.html"><img class="logo" src="/img/logo-gfn.svg.svg" alt="gfn.ru"></a>		
+        <a href="index.html">
+          <img class="logo" src="img/logo-gfn.svg.svg" alt="gfn.ru">
+        </a>
         <nav class="nav">
           <ul>
-            <li class="nav_item"><a class="nav_item_link" href="#">Игры</a></li>
-            <li class="nav_item"><a class="nav_item_link" href="download.html">Скачать</a></li>
+            <li class="nav_item">
+              <a class="nav_item_link" href="#">Игры</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_item_link" href="download.html">Скачать</a>
+            </li>
             <li class="nav_item dropdown">
               <a class="nav_item_link" href="#">Гайды</a>
               <svg class="headerMenu_link" width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 6H4l4.19 5L12 6Z" fill="#999"></path>
               </svg>
               <ul class="dropdown_menu">
-                <li><a href="#">Как начать играть?</a></li>
-                <li><a href="#">Как сэкономить?</a></li>
-                <li><a href="#">Технологии NVIDIA</a></li>
+                <li>
+                  <a href="#">Как начать играть?</a>
+                </li>
+                <li>
+                  <a href="#">Как сэкономить?</a>
+                </li>
+                <li>
+                  <a href="#">Технологии NVIDIA</a>
+                </li>
               </ul>
             </li>
-            <li class="nav_item"><a class="nav_item_link" href="welcome.html">О сервисе</a></li>
-            <li class="nav_item"><a class="nav_item_link" href="#">Поддержка</a></li>
+            <li class="nav_item">
+              <a class="nav_item_link" href="welcome.html">О сервисе</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_item_link" href="#">Поддержка</a>
+            </li>
           </ul>
       </div>
       <div class="header_middle"></div>
       <div class="header_right">
-      <button class="button">
-      <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9.5C2.44772 9.5 2 9.94772 2 10.5V13.5C2 14.0523 2.44772 14.5 3 14.5H21C21.5523 14.5 22 14.0523 22 13.5V10.5C22 9.94772 21.5523 9.5 21 9.5H3ZM5 13.5C5.55228 13.5 6 13.0523 6 12.5C6 11.9477 5.55228 11.5 5 11.5C4.44772 11.5 4 11.9477 4 12.5C4 13.0523 4.44772 13.5 5 13.5Z" fill="#666666"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3C2.44772 3 2 3.44772 2 4V7C2 7.55228 2.44772 8 3 8H21C21.5523 8 22 7.55228 22 7V4C22 3.44772 21.5523 3 21 3H3ZM5 7C5.55228 7 6 6.55228 6 6C6 5.44772 5.55228 5 5 5C4.44772 5 4 5.44772 4 6C4 6.55228 4.44772 7 5 7Z" fill="#666666"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16C2.44772 16 2 16.4477 2 17V20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20V17C22 16.4477 21.5523 16 21 16H3ZM5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" fill="#76B900"></path>
-      </svg>
-      </button>
-      <div class="header_right_divider"></div>
-      <a href="#"><img class="avatar" src="img/svg.svg" alt="avatar">
-      <span class="login">Войти</span>
-      </a>
-      </div>				
+        <button class="button">
+          <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9.5C2.44772 9.5 2 9.94772 2 10.5V13.5C2 14.0523 2.44772 14.5 3 14.5H21C21.5523 14.5 22 14.0523 22 13.5V10.5C22 9.94772 21.5523 9.5 21 9.5H3ZM5 13.5C5.55228 13.5 6 13.0523 6 12.5C6 11.9477 5.55228 11.5 5 11.5C4.44772 11.5 4 11.9477 4 12.5C4 13.0523 4.44772 13.5 5 13.5Z" fill="#666666"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3C2.44772 3 2 3.44772 2 4V7C2 7.55228 2.44772 8 3 8H21C21.5523 8 22 7.55228 22 7V4C22 3.44772 21.5523 3 21 3H3ZM5 7C5.55228 7 6 6.55228 6 6C6 5.44772 5.55228 5 5 5C4.44772 5 4 5.44772 4 6C4 6.55228 4.44772 7 5 7Z" fill="#666666"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16C2.44772 16 2 16.4477 2 17V20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20V17C22 16.4477 21.5523 16 21 16H3ZM5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" fill="#76B900"></path>
+          </svg>
+        </button>
+        <div class="header_right_divider"></div>
+        <a href="#">
+          <img class="avatar" src="img/svg.svg" alt="avatar">
+          <span class="login">Войти</span>
+        </a>
+      </div>
       </nav>
     </header>
     <main class="home">
       <section class="home_section">
         <div class="container">
           <h1 class="home_section_container_title">Играйте на всех мощностях!</h1>
-          <p class="home_section_container_description">
-            От 0 ₽ / месяц запустим ваши игры на наших мощных серверах GeForce
-          </p>
+          <p class="home_section_container_description"> От 0 ₽ / месяц запустим ваши игры на наших мощных серверах GeForce </p>
           <div class="home_section_action">
-            <a class="create_account_btn" href="#" class="btn">
-            Создать аккаунт и играть
-            </a>
-            <a class="login_btn" href="#" class="btn">
-            Войти
-            </a>
+            <a class="create_account_btn" href="#" class="btn"> Создать аккаунт и играть </a>
+            <a class="login_btn" href="#" class="btn"> Войти </a>
           </div>
         </div>
         <video class="home_section_video" autoplay muted loop playsinline src="img/geforce-now-3080-tier-hero-feb-22-update-2560x770.mp4" type="video/mp4"></video>
@@ -71,9 +79,7 @@
       <div class="home_section_startToPlay">
         <div class="container">
           <div class="home_section_startToPlay_wrap">
-            <a href="/guide/games.html" target="_blank" class="home_section_startToPlay_btn">
-              Как начать играть?
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="/guide/games.html" target="_blank" class="home_section_startToPlay_btn"> Как начать играть? <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 12L10 8L6 4" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
             </a>
@@ -83,309 +89,300 @@
       </div>
       <section class="home_advantages">
         <div class="container">
-        <div class="home_advantages_wrap">
-          <div class="home_advantages_colLeft">
-            <p class="home_advantages_title">Любое устройство станет игровым компьютером
-            </p>
-            <p class="home_advantages_description">GFN.RU позволяет запускать требовательные игры на старом ПК, Маке, на смартфоне Android или через браузер на iOS и Linux
-            </p>
-            <a class="btn btn_white" href="#">Системные требования</a>
-          </div>
-          <div class="home_advantages_colRight">
-            <ul class="home_advantages_devicelist">
-              <li class="home_advantages_devicelistItem">
-                <img src="img/windows.svg" alt="windows">
-              </li>
-              <li class="home_advantages_devicelistItem">
-                <img src="img/apple.svg" alt="apple">
-              </li>
-              <li class="home_advantages_devicelistItem">
-                <img src="img/chrome.svg" alt="chrome">
-              </li>
-              <li class="home_advantages_devicelistItem">
-                <img src="img/macos.svg" alt="macos">
-              </li>
-              <li class="home_advantages_devicelistItem">
-                <img src="img/android.svg" alt="android">
-              </li>
-              <li class="home_advantages_devicelistItem">
-                <img src="img/linux.svg" alt="linux">
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="home_advantages_wrap">
-          <div class="home_advantages_colLeft">
-            <img src="img/devices-xxl-xl.jpg" alt="img">
-          </div>
-          <div class="home_advantages_colRight">
-            <p class="home_advantages_title">Играйте без скачивания
-            </p>
-            <p class="home_advantages_description">Все игры хранятся на наших серверах и запускаются из облака. Даже приложение скачивать не обязательно — можно играть прямо в браузере. Гигабайты вашего жесткого диска освободятся для рефератов, фото или видео со свадьбы.
-            </p>
-            <div class="home_section_action">
-              <a class="green_btn" href="#">Запустить в браузере</a>
-              <a class="btn btn_white" href="#">
-              Скачать</a>
+          <div class="home_advantages_wrap">
+            <div class="home_advantages_colLeft">
+              <p class="home_advantages_title">Любое устройство станет игровым компьютером </p>
+              <p class="home_advantages_description">GFN.RU позволяет запускать требовательные игры на старом ПК, Маке, на смартфоне Android или через браузер на iOS и Linux </p>
+              <a class="btn btn_white" href="#">Системные требования</a>
+            </div>
+            <div class="home_advantages_colRight">
+              <ul class="home_advantages_devicelist">
+                <li class="home_advantages_devicelistItem">
+                  <img src="img/windows.svg" alt="windows">
+                </li>
+                <li class="home_advantages_devicelistItem">
+                  <img src="img/apple.svg" alt="apple">
+                </li>
+                <li class="home_advantages_devicelistItem">
+                  <img src="img/chrome.svg" alt="chrome">
+                </li>
+                <li class="home_advantages_devicelistItem">
+                  <img src="img/macos.svg" alt="macos">
+                </li>
+                <li class="home_advantages_devicelistItem">
+                  <img src="img/android.svg" alt="android">
+                </li>
+                <li class="home_advantages_devicelistItem">
+                  <img src="img/linux.svg" alt="linux">
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-        <div class="home_advantages_wrap">
-          <div class="home_advantages_colLeft">
-            <p class="home_advantages_title">Игры запустятся
-              за несколько секунд
-            </p>
-            <p class="home_advantages_description">Пока вы спите, мы скачиваем и устанавливаем все патчи и обновления. Благодаря мощным серверам обновленные игры запускаются почти мгновенно.
-            </p>
-            <a class="white_border_btn" href="#">Как начать играть</a>
-          </div>
-          <div class="home_advantages_colRight">
-            <div class="hexagon_wrap">
-              <div class="home_advantages_hexagon">
-                <img src="img/hexogon-xxl-xl.png" alt="hexagon">
-              </div>
-              <div class="home_advantages_laptop_wrap">
-                <img class="home_advantages_laptop" src="img/laptop-lg-xs.png" width="538" height="314" alt="laptop">
-                <video class="home_advantages_video" autoplay="" muted="" loop="" playsinline="">
-                  <source src="img/genshin-screen.webm" type="video/webm">
-                </video>
+          <div class="home_advantages_wrap">
+            <div class="home_advantages_colLeft">
+              <img src="img/devices-xxl-xl.jpg" alt="img">
+            </div>
+            <div class="home_advantages_colRight">
+              <p class="home_advantages_title">Играйте без скачивания </p>
+              <p class="home_advantages_description">Все игры хранятся на наших серверах и запускаются из облака. Даже приложение скачивать не обязательно — можно играть прямо в браузере. Гигабайты вашего жесткого диска освободятся для рефератов, фото или видео со свадьбы. </p>
+              <div class="home_section_action">
+                <a class="green_btn" href="#">Запустить в браузере</a>
+                <a class="btn btn_white" href="#"> Скачать</a>
               </div>
             </div>
           </div>
-        </div>
+          <div class="home_advantages_wrap">
+            <div class="home_advantages_colLeft">
+              <p class="home_advantages_title">Игры запустятся за несколько секунд </p>
+              <p class="home_advantages_description">Пока вы спите, мы скачиваем и устанавливаем все патчи и обновления. Благодаря мощным серверам обновленные игры запускаются почти мгновенно. </p>
+              <a class="white_border_btn" href="#">Как начать играть</a>
+            </div>
+            <div class="home_advantages_colRight">
+              <div class="hexagon_wrap">
+                <div class="home_advantages_hexagon">
+                  <img src="img/hexogon-xxl-xl.png" alt="hexagon">
+                </div>
+                <div class="home_advantages_laptop_wrap">
+                  <img class="home_advantages_laptop" src="img/laptop-lg-xs.png" width="538" height="314" alt="laptop">
+                  <video class="home_advantages_video" autoplay="" muted="" loop="" playsinline="">
+                    <source src="img/genshin-screen.webm" type="video/webm">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
       <section class="homeSubscriptions">
-        <div class="container">
-          <h2 class="homeSubscriptions_title">Доступные подписки
-          </h2>
-          <p class="homeSubscriptions_text">Начните бесплатно или купите подписку для игры без ограничений
-          </p>
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              
-              <!-- Slides -->
-              <div class="swiper-slide grey-slide">
-                
-                <div class="subscription_front">
-                  <h2 class="subscription_title grey-slide">Базовая</h2>
-                  <h3 class="subscription_duration">Неограниченно - 0 Р</h3>
-                  <p class="subscription_text">Безлимит после регистрации с ограниченным функционалом</p>
-                  <a class="btn btn_white subscription_btn" href="#">Зарегистрироваться</a>
-                  <a  class="subscription_flip" href="#">Все условия</a>
-                </div>
-                <div class="subscription_back"></div>
+        <h2 class="homeSubscriptions_title">Доступные подписки </h2>
+        <p class="homeSubscriptions_text">Начните бесплатно или купите подписку для игры без ограничений </p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide grey-slide">
+              <div class="subscription_front">
+                <h2 class="subscription_title grey-slide">Базовая</h2>
+                <h3 class="subscription_duration">Неограниченно - 0 Р</h3>
+                <p class="subscription_text">Безлимит после регистрации с ограниченным функционалом</p>
+                <a class="btn btn_white subscription_btn" href="#">Зарегистрироваться</a>
+                <a class="subscription_flip" href="#">Все условия</a>
               </div>
-              <div class="swiper-slide">
-                <div class="subscription_front">
-                  <h2 class="subscription_title">Премиум</h2>
-                  <h3 class="subscription_duration">
-                    30 дней - 1 499 ₽
-                  </h3>
-                  <p class="subscription_text">Играйте с приоритетным доступом, удлиненными игровыми сессиями и технологиями NVIDIA RTX</p>
-                  <a class="btn btn_white subscription_btn" href="#">Подключить</a>
-                  <button class="subscription_flip">Все условия</button>
-                </div>
-                <div class="subscription_back"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="subscription_front">
-                  <h2 class="subscription_title">
-                    Премиум Неделя
-                  </h2>
-                  <h3 class="subscription_duration">
-                    7 дней - 690 ₽
-                  </h3>
-                  <p class="subscription_text">
-                    Премиум всю неделю без остановки 🥐
-                  </p>
-                  <a class="btn btn_white subscription_btn" href="#">Подключить</a>
-                  <button class="subscription_flip">Все условия</button>
-                </div>
-                <div class="subscription_back"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="subscription_front">
-                  <h2 class="subscription_title">
-                    Премиум 1 день
-                  </h2>
-                  <h3 class="subscription_duration">
-                    1 день - 399 ₽
-                  </h3>
-                  <p class="subscription_text">
-                    Играйте сутки напролёт
-                  </p>
-                  <a class="btn btn_white subscription_btn" href="#">Подключить</a>
-                  <button class="subscription_flip">Все условия</button>
-                </div>
-                <div class="subscription_back"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="subscription_front">
-                  <h2 class="subscription_title">Премиум Ночь</h2>
-                  <h3 class="subscription_duration">30 дней - 599 ₽</h3>
-                  <p class="subscription_text">
-                    Играйте со всеми преимуществами Премиума, пока другие спят
-                  </p>
-                  <a class="btn subscription_btn" href="#">Подключить</a>
-                  <button class="subscription_flip">Все условия</button>
-                </div>
-                <div class="subscription_back"></div>
-              </div>
-              
+              <div class="subscription_back"></div>
             </div>
-            <button class="swiper-button swiper-prev"></button>
-            <button class="swiper-button swiper-next"></button>
-            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><button class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Перейти к слайду 1" aria-current="true"></button><button class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Перейти к слайду 2"></button><button class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Перейти к слайду 3"></button><button class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Перейти к слайду 4"></button><button class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Перейти к слайду 5"></button></div>
+            <div class="swiper-slide">
+              <div class="subscription_front">
+                <h2 class="subscription_title">Премиум</h2>
+                <h3 class="subscription_duration"> 30 дней - 1 499 ₽ </h3>
+                <p class="subscription_text">Играйте с приоритетным доступом, удлиненными игровыми сессиями и технологиями NVIDIA RTX</p>
+                <a class="btn btn_white subscription_btn" href="#">Подключить</a>
+                <button class="subscription_flip">Все условия</button>
+              </div>
+              <div class="subscription_back"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="subscription_front">
+                <h2 class="subscription_title"> Премиум Неделя </h2>
+                <h3 class="subscription_duration"> 7 дней - 690 ₽ </h3>
+                <p class="subscription_text"> Премиум всю неделю без остановки 🥐 </p>
+                <a class="btn btn_white subscription_btn" href="#">Подключить</a>
+                <button class="subscription_flip">Все условия</button>
+              </div>
+              <div class="subscription_back"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="subscription_front">
+                <h2 class="subscription_title"> Премиум 1 день </h2>
+                <h3 class="subscription_duration"> 1 день - 399 ₽ </h3>
+                <p class="subscription_text"> Играйте сутки напролёт </p>
+                <a class="btn btn_white subscription_btn" href="#">Подключить</a>
+                <button class="subscription_flip">Все условия</button>
+              </div>
+              <div class="subscription_back"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="subscription_front">
+                <h2 class="subscription_title">Премиум Ночь</h2>
+                <h3 class="subscription_duration">30 дней - 599 ₽</h3>
+                <p class="subscription_text"> Играйте со всеми преимуществами Премиума, пока другие спят </p>
+                <a class="btn btn_white subscription_btn" href="#">Подключить</a>
+                <button class="subscription_flip">Все условия</button>
+              </div>
+              <div class="subscription_back"></div>
+            </div>
           </div>
-          
-
-          <p class="homeSubscriptions_warning">*Количество подписок для одного пользователя не ограничено</p>
-          </div>
+          <button class="swiper-button swiper-prev"></button>
+          <button class="swiper-button swiper-next"></button>
+          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+        </div>
+        </div>
+        </div>
+        <p class="homeSubscriptions_warning">*Количество подписок для одного пользователя не ограничено</p>
       </section>
-<section class="wall">
-<h2 class="wall_title">
-  1300 игр, готовых к запуску
-</h2>
-<p class="wall_text">Подключайте свою библиотеку Steam, Ubisoft Connect, Epic Games или запускайте бесплатные игры</p>
-<a href="#" class="btn green_btn">Перейти в каталог</a>
-<div class="wall_action">
-  <a href="#" class="wall_link" aria-label="Перейти в каталог"></div>
-    <div class="wall_row row01"></div>
-    <div class="wall_row row02"></div>
-    <div class="wall_row row03"></div>
-    </a>
-</section>
-<section class="homePartners">
-  <div class="container">
-  <h2 class="homePartners_title">Официальные партнёры и программы лояльности
-  </h2>
-
-  <ul class="homePartners_wrap">
-    <li class="homePartners_item homePartners_item_rt">
-      <a href="#">
-        <img src="img/rt-logo.png" alt="rt-logo">
-      </a>
-    </li>
-    <li class="homePartners_item homePartners_item_mvideo" >
-      <a href="#">
-        <img src="img/mvideo-logo.png" alt="mvideo-logo">
-      </a>
-    </li>
-    <li class="homePartners_item">
-      <a href="#">
-        <img src="img/eldorado-logo.png" alt="eldorado-logo">
-      </a>
-    </li>
-    <li class="homePartners_item">
-      <a href="#">
-        <img src="img/spasibo-logo.png" alt="spasibo-logo">
-      </a>
-    </li>
-    <li class="homePartners_item homePartners_item_multibonus">
-      <a href="#">
-        <img src="img/multibonus-logo.png" alt="multibonus-logo">
-      </a>
-    </li>
-    <li class="homePartners_item">
-      <a href="#">
-        <img src="img/tele2-logo.png" alt="tele2-logo">
-      </a>
-    </li>
-  </ul>
-</div>
-</section>
-<section class="homeTryFree">
-  <div class="container">
-    <h2 class="homeTryFree_title">
-      Начните играть прямо сейчас
-    </h2>
-    <p class="homeTryFree_text">GFN.RU - это более 1300 игр, готовых к запуску на любом устройстве. Выбирайте любимый жанр и врывайтесь в игру!
-    </p>
-    <a href="#" class="btn green_btn">Попробовать бесплатно</a>
-  </div>
-</section>
-<footer class="footer">
-  <div class="container">
-    <div class="footer_wrap">
-      
-      <div class="footer_navs">
-        <div class="footer_logo">
-          <a href="#"></a>
-          <img src="img/logo-gfn.svg.svg" alt="">
+      <section class="wall">
+        <h2 class="wall_title"> 1300 игр, готовых к запуску </h2>
+        <p class="wall_text">Подключайте свою библиотеку Steam, Ubisoft Connect, Epic Games или запускайте бесплатные игры</p>
+        <a href="#" class="btn green_btn">Перейти в каталог</a>
+        <div class="wall_action">
+          <a href="#" class="wall_link" aria-label="Перейти в каталог">
         </div>
-        <div class="footer_navFaq">
-          <ul class="navFaq">
-            <li>
-              <a href="">Полезная информация</a>
+        <div class="wall_row row01"></div>
+        <div class="wall_row row02"></div>
+        <div class="wall_row row03"></div>
+        </a>
+      </section>
+      <section class="homePartners">
+        <div class="container">
+          <h2 class="homePartners_title">Официальные партнёры и программы лояльности </h2>
+          <ul class="homePartners_wrap">
+            <li class="homePartners_item homePartners_item_rt">
+              <a href="#">
+                <img src="img/rt-logo.png" alt="rt-logo">
+              </a>
             </li>
-            <li>
-              <a href="#">FAQ</a>
+            <li class="homePartners_item homePartners_item_mvideo">
+              <a href="#">
+                <img src="img/mvideo-logo.png" alt="mvideo-logo">
+              </a>
             </li>
-            <li>
-              <a href="#">Системные требования</a>
+            <li class="homePartners_item">
+              <a href="#">
+                <img src="img/eldorado-logo.png" alt="eldorado-logo">
+              </a>
             </li>
-            <li>
-              <a href="#">Поддержка</a>
+            <li class="homePartners_item">
+              <a href="#">
+                <img src="img/spasibo-logo.png" alt="spasibo-logo">
+              </a>
             </li>
-            <li>
-              <a href="#">Рекомендуемые устройства</a>
+            <li class="homePartners_item homePartners_item_multibonus">
+              <a href="#">
+                <img src="img/multibonus-logo.png" alt="multibonus-logo">
+              </a>
+            </li>
+            <li class="homePartners_item">
+              <a href="#">
+                <img src="img/tele2-logo.png" alt="tele2-logo">
+              </a>
             </li>
           </ul>
         </div>
-        <div class="footer_navAbout">
-          <ul class="navAbout">
-            <li><a href="#">О сервисе</a></li>
-            <li><a href="#">Доступные игры</a></li>
-            <li><a href="#">Вакансии</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
+      </section>
+      <section class="homeTryFree">
+        <div class="container">
+          <h2 class="homeTryFree_title"> Начните играть прямо сейчас </h2>
+          <p class="homeTryFree_text">GFN.RU - это более 1300 игр, готовых к запуску на любом устройстве. Выбирайте любимый жанр и врывайтесь в игру! </p>
+          <a href="#" class="btn green_btn">Попробовать бесплатно</a>
         </div>
-        <div class="footer_navDownload">
-          <ul class="navDownload">
-            <li><a href="#">GeForce NOW</a></li>
-            <li><a href="#">Скачать для Windows</a></li>
-            <li><a href="#">Скачать для macOS</a></li>
-            <li><a href="#">Скачать для Android</a></li>
-            <li><a href="#">Играть в браузере</a></li>
-          </ul>      
-        </div>
-        <div class="footer_navInfo">
-          <ul class="navInfo">
-            <li><a href="#">Правовая информация</a></li>
-            <li><a href="#">Соглашение</a></li>
-            <li><a href="#">Конфиденциальность</a></li>
-            <li><a href="#">Реквизиты</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer_bottom">
-      <div class="container">
-        <div class="footer_bottom_wrap">
-          <div class="footer_bottom_company">
-            
-  Сервис предоставляет <a href="#">ООО «Регион Эстейт»</a>. © 2019 - 2023
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_wrap">
+            <div class="footer_navs">
+              <div class="footer_logo">
+                <a href="#"></a>
+                <img src="img/logo-gfn.svg.svg" alt="">
+              </div>
+              <div class="footer_navFaq">
+                <ul class="navFaq">
+                  <li>
+                    <a href="">Полезная информация</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Системные требования</a>
+                  </li>
+                  <li>
+                    <a href="#">Поддержка</a>
+                  </li>
+                  <li>
+                    <a href="#">Рекомендуемые устройства</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_navAbout">
+                <ul class="navAbout">
+                  <li>
+                    <a href="#">О сервисе</a>
+                  </li>
+                  <li>
+                    <a href="#">Доступные игры</a>
+                  </li>
+                  <li>
+                    <a href="#">Вакансии</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_navDownload">
+                <ul class="navDownload">
+                  <li>
+                    <a href="#">GeForce NOW</a>
+                  </li>
+                  <li>
+                    <a href="#">Скачать для Windows</a>
+                  </li>
+                  <li>
+                    <a href="#">Скачать для macOS</a>
+                  </li>
+                  <li>
+                    <a href="#">Скачать для Android</a>
+                  </li>
+                  <li>
+                    <a href="#">Играть в браузере</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_navInfo">
+                <ul class="navInfo">
+                  <li>
+                    <a href="#">Правовая информация</a>
+                  </li>
+                  <li>
+                    <a href="#">Соглашение</a>
+                  </li>
+                  <li>
+                    <a href="#">Конфиденциальность</a>
+                  </li>
+                  <li>
+                    <a href="#">Реквизиты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="footer_bottom_social">
-            <nav class="footerSocialNav">
-              <a href="#"><img src="img/vk.svg" alt="vk"></a>
-              <a href="#"><img src="img/discord.svg" alt="discord"></a>
-              <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
-              <a href="#"><img src="img/twitter.svg" alt="twitter"></a>
-              <a href="#"><img src="img/google-play.svg" class="google-play-icon" alt="google-play"></a>
-            </nav>
-            
+          <div class="footer_bottom">
+            <div class="container">
+              <div class="footer_bottom_wrap">
+                <div class="footer_bottom_company"> Сервис предоставляет <a href="#">ООО «Регион Эстейт»</a>. © 2019 - 2023 </div>
+                <div class="footer_bottom_social">
+                  <nav class="footerSocialNav">
+                    <a href="#">
+                      <img src="img/vk.svg" alt="vk">
+                    </a>
+                    <a href="#">
+                      <img src="img/discord.svg" alt="discord">
+                    </a>
+                    <a href="#">
+                      <img src="img/youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#">
+                      <img src="img/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="#">
+                      <img src="img/google-play.svg" class="google-play-icon" alt="google-play">
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-</footer>
-
-     
+      </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>
