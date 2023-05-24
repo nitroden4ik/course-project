@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   slidesPerView: 3,
   spaceBetween: 30,
+  clickable: true,
   loop: true,
 
   // If we need pagination
@@ -12,8 +13,8 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-next',
     prevEl: '.swiper-prev',
+    nextEl: '.swiper-next',
 
   },
 
@@ -24,28 +25,19 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-const swiper2 = new Swiper2('.swiper-container-2', {
-  // Optional parameters
+const mySwiper = new Swiper('.welcome-swiper-container', {
   direction: 'horizontal',
   slidesPerView: 1,
-  spaceBetween: 30,
   loop: true,
+  autoplay: true,
 
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
-
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    }
+  }
+  
 });
