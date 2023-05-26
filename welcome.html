@@ -243,9 +243,24 @@
     <section class="welcome-access black-section">
       <div class="container">
         <div class="map-container">
-          <div class="server-1"><img src="img/server.svg" alt="server"></div>
-          <div class="server-2"><img src="img/server.svg" alt="server"></div>
-          <div class="server-3"><img src="img/server.svg" alt="server"></div>
+          <div class="server-1">
+            <div class="server1-tooltip">              
+Здесь находится серверный кластер в РТК ЦОД Новосибирск (серверы RU SIBERIA)
+            </div>
+            <img src="img/server.svg" alt="server"></div>
+          <div class="server-2">
+            <div class="server2-tooltip">              
+              
+Здесь находится серверный кластер в РТК ЦОД Екатеринбург (серверы RU URAL)
+                          </div>
+            <img src="img/server.svg" alt="server"></div>
+          <div class="server-3">
+            <div class="server3-tooltip">              
+              
+             
+Здесь находится серверный кластер в РТК ЦОД Новосибирск (серверы RU SIBERIA)
+                                        </div>
+            <img src="img/server.svg" alt="server"></div>
         <h1 class="title welcome-access-title">Где доступен GFN.RU?</h1>
         <h3 class="welcome-access-subtitle">
           Сегодня GFN.RU присутствует в 8 странах:
@@ -265,9 +280,92 @@
 Камчатке. Попробуйте бесплатно!
         </p>
         <a class="btn green_btn" href="#">Зарегистрироваться и играть</a>
+      </div>
+      <div class="access-divider"></div>
+      <h1 class="title req-title">Какие требования к устройству?
+      </h1>
+      <div class="col-wrapper">
+      <div class="req-col">
+        <div class="req-text">
+          Моё устройство:
+        </div>
+        <button class="dropdown-btn green_btn bi" id="dropdown-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M.508 10.998L.5 3.818 9.233 2.63l.004 8.318-8.729.05zm-.001 1.969l8.722.056.006 8.326-8.727-1.2-.001-7.182zm10.901-2.043V2.316L23.313.578V10.83l-11.905.095zm-.017 2.17l11.925.02-.003 10.2-11.906-1.68-.016-8.54z" fill="#fff" stroke="#fff"></path>
+          </svg>
+        <span>Windows</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 6H4l4.19 5L12 6z" fill="#fff"></path>
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <ul class="menu-list" id="dropdown-menu-list">
+            <li class="dropdown-menu-item" id="windows">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M.508 10.998L.5 3.818 9.233 2.63l.004 8.318-8.729.05zm-.001 1.969l8.722.056.006 8.326-8.727-1.2-.001-7.182zm10.901-2.043V2.316L23.313.578V10.83l-11.905.095zm-.017 2.17l11.925.02-.003 10.2-11.906-1.68-.016-8.54z" fill="#76B900" stroke="#76B900"></path>
+                </svg><span>Windows</span>
+            </li>
+            <li class="dropdown-menu-item" id="macos">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.667 6.635h.003c.256.095.533.197.784.275.238.074.512.145.744.145.109 0 .218-.023.3-.044.089-.023.184-.054.278-.086.18-.062.382-.142.56-.213l.02-.008h.001c.802-.32 1.708-.675 2.752-.675h.007c.82 0 3.199.186 4.621 2.321 0 0 0 0 0 0l.106.16-.152.115-.016.012c-.762.575-2.317 1.748-2.317 4.056 0 1.338.433 2.293.986 2.975.54.663 1.178 1.048 1.556 1.275l.011.006.258-.428-.258.428c.179.108.286.176.358.251a.222.222 0 01.072.138 12.323 12.323 0 01-.376.991 16.562 16.562 0 01-1.14 2.184c-.491.782-1.07 1.532-1.715 2.082-.645.55-1.317.869-2.006.869-.721 0-1.228-.212-1.742-.43 0 0 0 0 0 0l-.008-.004c-.531-.227-1.062-.452-1.912-.452-.261 0-.53.06-.777.134-.25.074-.511.172-.76.265l-.004.002c-.703.262-1.406.521-2.194.521h-.022c-.716-.005-1.454-.375-2.183-1.07-.726-.695-1.4-1.673-1.977-2.788-1.159-2.238-1.868-4.91-1.868-6.667 0-2.89 1.076-4.592 2.308-5.582C6.22 6.383 7.68 6.08 8.46 6.08c.685 0 1.441.272 2.206.554zm10.68 10.676s0 0 0 0l.002-.005-.001.005z" fill="#76B900" stroke="#76B900"></path>
+                <path d="M16.47 0c.088 3.191-2.194 5.405-4.474 5.266C11.621 2.719 14.276 0 16.47 0z" fill="#76B900"></path>
+                </svg><span>macOS</span>
+            </li>
+            <li class="dropdown-menu-item" id="android">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip2)" fill="#76B900">
+                <path d="M2.503 9.503a1 1 0 111.999 0v6.999a1 1 0 01-2 0V9.503z" stroke="#76B900"></path>
+                <path d="M20.498 8.004a1.5 1.5 0 00-1.5 1.5v6.998a1.5 1.5 0 003 0V9.503a1.5 1.5 0 00-1.5-1.5zM17.499 8.004H6.502a.5.5 0 00-.5.5v7.998a2.5 2.5 0 002 2.45V22.5a1.5 1.5 0 102.999 0v-3.499h2v3.5a1.5 1.5 0 102.998 0v-3.55a2.5 2.5 0 002-2.45V8.505a.5.5 0 00-.5-.5z"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.635 2.077L16.854.86a.5.5 0 00-.695-.719l-.012.013-1.42 1.42a6.842 6.842 0 00-5.452 0L7.855.151a.5.5 0 00-.706.706l1.217 1.22a5.276 5.276 0 00-2.364 4.426.5.5 0 00.5.5h10.997a.5.5 0 00.5-.5 5.276 5.276 0 00-2.364-4.427zM9.5 5.004a.5.5 0 100-1 .5.5 0 000 1zm5.498-.5a.5.5 0 11-1 0 .5.5 0 011 0z"></path>
+                </g>
+                <defs>
+                <clipPath id="clip2">
+                <path fill="#76B900" d="M0 0h24v24H0z"></path>
+                </clipPath>
+                </defs>
+                </svg><span>Android</span>
+            </li>
+            <li class="dropdown-menu-item" id="pc">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip3)" fill="#76B900">
+                <path d="M6.57 9.566L3.51 4.244C8.72-1.471 17.92-.464 21.838 6.054a9289.471 9289.471 0 01-8.445 0h-.307c-1.486-.003-2.633-.005-3.851.637A6 6 0 006.57 9.566z" stroke="#76B900"></path>
+                <path d="M8.008 12.001c0 2.2 1.79 3.99 3.989 3.99a3.994 3.994 0 003.988-3.99c0-2.2-1.79-3.99-3.988-3.99a3.992 3.992 0 00-3.989 3.99z"></path>
+                <path d="M13.543 17.224c-2.238.664-4.858-.072-6.292-2.55-1.095-1.89-3.99-6.932-5.304-9.225-4.608 7.062-.638 16.684 7.726 18.327l3.87-6.552z"></path>
+                <path d="M15.7 8.01a5.463 5.463 0 011.008 6.718c-.951 1.641-3.988 6.766-5.46 9.248 8.618.53 14.9-7.915 12.062-15.968l-7.61.002z"></path>
+                </g>
+                <defs>
+                <clipPath id="clip3">
+                <path fill="#76B900" d="M0 0h24v24H0z"></path>
+                </clipPath>
+                </defs>
+                </svg><span>ПК с браузером Chrome</span>
+            </li>
+            <li class="dropdown-menu-item" id="ios">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.667 6.635h.003c.256.095.533.197.784.275.238.074.512.145.744.145.109 0 .218-.023.3-.044.089-.023.184-.054.278-.086.18-.062.382-.142.56-.213l.02-.008h.001c.802-.32 1.708-.675 2.752-.675h.007c.82 0 3.199.186 4.621 2.321 0 0 0 0 0 0l.106.16-.152.115-.016.012c-.762.575-2.317 1.748-2.317 4.056 0 1.338.433 2.293.986 2.975.54.663 1.178 1.048 1.556 1.275l.011.006.258-.428-.258.428c.179.108.286.176.358.251a.222.222 0 01.072.138 12.323 12.323 0 01-.376.991 16.562 16.562 0 01-1.14 2.184c-.491.782-1.07 1.532-1.715 2.082-.645.55-1.317.869-2.006.869-.721 0-1.228-.212-1.742-.43 0 0 0 0 0 0l-.008-.004c-.531-.227-1.062-.452-1.912-.452-.261 0-.53.06-.777.134-.25.074-.511.172-.76.265l-.004.002c-.703.262-1.406.521-2.194.521h-.022c-.716-.005-1.454-.375-2.183-1.07-.726-.695-1.4-1.673-1.977-2.788-1.159-2.238-1.868-4.91-1.868-6.667 0-2.89 1.076-4.592 2.308-5.582C6.22 6.383 7.68 6.08 8.46 6.08c.685 0 1.441.272 2.206.554zm10.68 10.676s0 0 0 0l.002-.005-.001.005z" fill="#76B900" stroke="#76B900"></path>
+                <path d="M16.47 0c.088 3.191-2.194 5.405-4.474 5.266C11.621 2.719 14.276 0 16.47 0z" fill="#76B900"></path>
+                </svg><span>iOS/iPadOS</span>
+            </li>
+          </ul>
+        </div>
+        <div class="text req-text">Минимальные требования:
+        </div>
+        <ul class="req-list">
+          <li>Windows 7 64-бит или новее (системы 32-бит не поддерживаются)
+          </li>
+          <li>Процессор с частотой от 2 ГГц
+          </li>
+          <li>Оперативная память от 4 Гб
+          </li>
+          <li>Видеокарта, поддерживающая DirectX 11 и выше
+          </li>
+        </ul>
+      </div>
+      <div class="req-col-right">
+        <img src="img/windows-xxl.png" alt="windows">
       </div></div>
-
-    </section>
+             </div>
+          </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>

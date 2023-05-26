@@ -920,7 +920,7 @@ div {
 }
 
 .black-section {
-	background-color: #000 !important;
+	background-color: #111 !important;
 	color: #fff;
 }
 
@@ -963,7 +963,7 @@ section.welcome-games {
 
 .welcome-access {
 	padding-top: 88px;
-	height: 722px;
+	height: auto;
 }
 
 .welcome-access-subtitle {
@@ -971,11 +971,13 @@ section.welcome-games {
 }
 
 .countries {
+
 	margin-top: 17px;
 	margin-bottom: 80px;
 }
 
 .country-item {
+	list-style: disc;
 	margin: 10px;
 	font-size: 18px;
 	line-height: 24px
@@ -990,6 +992,8 @@ section.welcome-games {
 	background-image: url(/img/map.png);
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: right;
+
 	width: 100%;
 	position: relative;
 }
@@ -1001,16 +1005,140 @@ section.welcome-games {
 }
 
 .server-1 {
-	left: 21%;
+	left: 36%;
 	top: 42%;
 }
 
 .server-2 {
-	left: 33%;
+	left: 46%;
 	top: 40%;
 }
 
 .server-3 {
-	left: 45%;
+	left: 56%;
 	top: 45%;
+}
+
+.server-1:after, .server-2:after, .server-3::after {
+	background: url(/img/beam.png) 50% 50% no-repeat;
+	animation: beam 1.5s linear infinite;
+	left: 25px;
+	top: 18px;
+  content: "";
+  height: 200px;
+  position: absolute;
+	background-attachment: fixed; 
+  width: 200px;
+  z-index: 11;
+}
+
+.server1-tooltip, .server2-tooltip, .server3-tooltip {
+  background: #f7f7f7;
+  border-radius: 3px;
+  color: black;
+  display: none;
+  font-size: 12px;
+  left: 50%;
+  line-height: 14px;
+  padding: 16px;
+  position: absolute;
+  top: -72px;
+  transform: translate(-50%);
+  width: 280px;
+  z-index: 223;
+}
+
+.server-1:hover .server1-tooltip, .server-2:hover .server2-tooltip,.server-3:hover .server3-tooltip {
+  display: block;
+}
+
+@keyframes beam {
+	0% {
+			transform: translate(-50%,-50%) scale(.65)
+	}
+	to {
+			transform: translate(-50%,-50%) scale(1)
+	}
+}
+
+.access-divider {
+	height: 2px;
+	width: 100%;
+	background-color: #333;
+	margin-top: 60px;
+}
+
+.req-col {
+	width: 50%;
+}
+
+.col-wrapper {
+	display: flex;
+}
+
+.req-title {
+	padding-top: 64px;
+	margin-bottom: 40px;
+}
+
+.req-text {
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.dropdown-btn {
+	margin-top: 20px;
+	cursor: pointer;
+	width: 352px;
+}
+
+.dropdown-btn svg {
+	margin: 0 12px;
+}
+
+.dropdown-menu {
+	position: relative;
+}
+
+.menu-list {
+	background-color: #eee;
+	border-radius: 6px;
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 10px;
+	width: 352px;
+}
+
+.dropdown-menu-item {
+	padding: 15px;
+	cursor: pointer;
+}
+
+.dropdown-menu-item:hover {
+	background-color: #c8c8c8;
+	border-radius: inherit;
+}
+
+.dropdown-menu-item span{
+	color: #000;
+	font-size: 16px;
+	margin-left: 12px;
+}
+
+
+
+.dropdown-menu-list:hover {
+	display: block;
+}
+
+.req-list li{
+	font-size: 18px;
+	list-style: disc;
+	padding-top: 8px;
+	
+}
+
+.req-list {
+	margin-bottom: 80px;
 }
