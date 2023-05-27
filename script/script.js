@@ -1,4 +1,5 @@
-var swiper1 = new Swiper('.swiper', {
+
+const swiper1 = new Swiper('.swiper', {
   pagination: {
         el: '.swiper-pagination',
       },
@@ -13,7 +14,7 @@ var swiper1 = new Swiper('.swiper', {
   clickable: true,
   loop: true,
 });
-var swiper2 = new Swiper('.welcome-swiper', {
+const swiper2 = new Swiper('.welcome-swiper', {
   slidesPerView: 1,
   paginationClickable: true,
   spaceBetween: 30,
@@ -29,6 +30,15 @@ var swiper2 = new Swiper('.welcome-swiper', {
     clickable: true,
   },
 });
+
+const swiper = new Swiper('.swiper-container', {
+  loop: true,
+  spaceBetween: 30,
+  direction: 'horizontal',
+  slidesPerView: 1,
+  autoplay: true,
+});
+
 
 const dropdownBtn = document.getElementById('dropdown-btn');
 const dropdownMenu = document.getElementById('dropdown-menu-list');

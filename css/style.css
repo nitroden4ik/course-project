@@ -233,12 +233,12 @@ div {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-color: var(--brand_color);
+	background-color: var(--brand-color);
 }
 .home_section_startToPlay_wrap {
 	align-items: center;
 	display: flex;
-	background-color: var(--brand_color);
+	background-color: var(--brand-color);
 	line-height: 24px;
 	width: 100%;
 }
@@ -1136,9 +1136,26 @@ section.welcome-games {
 	font-size: 18px;
 	list-style: disc;
 	padding-top: 8px;
-	
 }
 
 .req-list {
 	margin-bottom: 80px;
 }
+
+.swiper-list {
+	white-space: nowrap;
+	overflow: hidden;
+  }
+  
+  .swiper-list li {
+	display: inline-block;
+	/* margin-right: 20px; */
+	width: 200px;
+  }
+
+  .welcome-swiper-slide {
+	width: 100%;
+  }
+
+
+  
