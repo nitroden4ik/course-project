@@ -1,13 +1,12 @@
 
+
 const swiper1 = new Swiper('.swiper', {
   pagination: {
-        el: '.swiper-pagination',
-      },
-        navigation: {
-    prevEl: '.swiper-prev',
-    nextEl: '.swiper-next',
-
+  el: '.swiper-pagination',
   },
+  navigation: {
+  prevEl: '.swiper-prev',
+  nextEl: '.swiper-next',},
   slidesPerView: 3,
   paginationClickable: true,
   spaceBetween: 30,
@@ -21,24 +20,14 @@ const swiper2 = new Swiper('.welcome-swiper', {
   clickable: true,
   loop: true,
   navigation: {
-    prevEl: '.welcome-slide-swiper-prev-btn',
-    nextEl: '.welcome-slide-swiper-next-btn',
-   
-  },
+  prevEl: '.welcome-slide-swiper-prev-btn',
+  nextEl: '.welcome-slide-swiper-next-btn',
+},
   pagination: {
     el: '.welcome-pagination',
     clickable: true,
   },
 });
-
-const swiper = new Swiper('.swiper-container', {
-  loop: true,
-  spaceBetween: 30,
-  direction: 'horizontal',
-  slidesPerView: 1,
-  autoplay: true,
-});
-
 
 const dropdownBtn = document.getElementById('dropdown-btn');
 const dropdownMenu = document.getElementById('dropdown-menu-list');
@@ -67,6 +56,8 @@ function changeImageSrc(event) {
   const img = document.querySelector('.req-col-right img');
   let src;
 
+  // switch pictures
+
   switch (event.target.id) {
     case 'macos':
       src = 'img/mac-xxl.png';
@@ -88,7 +79,7 @@ function changeImageSrc(event) {
   }
 
   img.setAttribute('src', src);
-  document.querySelector('.menu-list').style.display = ''; // Show the element
+  document.querySelector('.menu-list').style.display = '';
 }
 
 
