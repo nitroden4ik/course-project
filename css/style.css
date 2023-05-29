@@ -214,91 +214,6 @@ div {
 	color: #000;
 	font-weight: bold;
   }
-  
-  /* Media queries */
-  @media screen and (max-width: 768px) {
-	.burger {
-	  display: block;
-	}
-  
-	.menu {
-	  flex-direction: column;
-	  align-items: flex-start;
-	  position: absolute;
-	  top: 70px;
-	  left: -100%;
-	  width: 100%;
-	  transition: all 0.5s ease-in-out;
-	  z-index: 9999;
-	  background-color: #fff;
-	}
-  
-	.menu.active {
-	  left: 0;
-	}
-  
-	.menu ul {
-	  flex-direction: column;
-	  align-items: center;
-	}
-  
-	.menu li {
-	  margin: 1rem 0;
-	}
-  }
-  
-
-/* home section adaptive*/
-/* For screens smaller than 768px */
-@media (max-width: 767px) {
-	.header {
-	  height: auto;
-	  padding: 12px;
-	  flex-direction: column;
-	  align-items: center;
-	}
-	
-	.header_left, .header_right {
-	  margin: 0;
-	  width: 100%;
-	  text-align: center;
-	}
-	
-	.logo {
-	  margin-bottom: 12px;
-	}
-	
-	.nav {
-	  flex-wrap: wrap;
-	  justify-content: center;
-	}
-	
-	.nav_item {
-	  flex-basis: 50%;
-	  padding: 8px;
-	}
-	
-	.nav_item_link:hover {
-	  color: #999;
-	}
-	
-	.headerMenu_link {
-	  margin-left: 4px;
-	  width: 14px;
-	  height: 14px;
-	}
-	
-	.dropdown_menu {
-	  position: static;
-	  display: none;
-	  margin-top: 0;
-	  background-color: transparent;
-	}
-	
-	.header_right_divider {
-	  display: none;
-	}
-  }
 
 .home_section {
 	min-height: 736px;
@@ -351,6 +266,128 @@ div {
 	display: grid;
 	gap: 16px 32px;
 }
+
+.home_section {
+	min-height: 736px;
+	padding: 184px 0 0;
+	position: relative;
+}
+
+.home_section_video {
+	height: 100%;
+	inset: 0;
+	object-fit: cover;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.home_section_container_title {
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 48px;
+	max-width: 448px;
+	margin-bottom: 32px;
+	text-transform: uppercase;
+}
+
+.home_section_container_description {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 48px;
+	display: block;
+	padding-top: 32px;
+	max-width: 544px;
+}
+
+.create_account_btn, .green_btn {
+	background-color: #76b900;
+	border-radius: 8px;
+	transition: .25s ease-out;
+	padding: 16px 7px;
+	justify-content: center;
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.login_btn {
+	font-size: 20px;
+	padding: 16px 32px;
+	background-color: #222;
+	border-radius: 8px;
+	display: inline-flex;
+}
+
+.home_section_action {
+	grid-template-columns: 318px 124px;
+	display: grid;
+	gap: 16px 32px;
+}
+
+@media (max-width: 768px) {
+  .home_section {
+    min-height: auto;
+    padding: 120px 0;
+  }
+
+  .home_section_container_title {
+    font-size: 36px;
+    line-height: 42px;
+    max-width: none;
+    margin-bottom: 24px;
+  }
+
+  .home_section_container_description {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+    padding-top: 24px;
+    max-width: none;
+  }
+
+  .create_account_btn, .green_btn {
+    font-size: 16px;
+    padding: 12px 7px;
+  }
+
+  .login_btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .home_section_action {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home_section_container_title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .home_section_container_description {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 24px;
+    padding-top: 16px;
+  }
+
+  .create_account_btn, .green_btn {
+    font-size: 14px;
+    padding: 10px 7px;
+  }
+
+  .login_btn {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+}
+
+
 .home_section_startToPlay {
 	color: white;
 	font-family: Rubik, Noto Sans Armenian,sans-serif;
@@ -414,6 +451,8 @@ div {
 	display: flex;
 	flex-wrap: wrap;
 }
+
+
 .btn {
 	align-items: center;
 	border-radius: 8px;
@@ -484,6 +523,94 @@ div {
 	transform: translateX(calc(-50% + 1px));
 	width: 68%;
 }
+
+/* home-advantages section adaptive */
+@media (max-width: 768px) {
+	.home_advantages {
+	padding: 96px 0;
+	}
+	
+	.home_advantages_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 48px;
+	}
+	
+	.home_advantages_colLeft,
+	.home_advantages_colRight {
+	text-align: center;
+	}
+	
+	.home_advantages_title {
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 16px;
+	}
+	
+	.home_advantages_description {
+	font-size: 16px;
+	line-height: 24px;
+	}
+	
+	.home_advantages_devicelist {
+		display: flex;
+		flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 24px;
+	margin-bottom: 48px;
+	max-width: 100%;
+    order: -1;
+    width: 360px;
+	}
+	
+	.home_advantages_devicelistItem {
+	margin-right: 8px;
+	margin-left: 8px;
+	
+	}
+	
+	.home_advantages_colLeft img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 24px;
+	}
+	
+	.home_section_action {
+	display: flex;
+	flex-direction: column;
+	margin-top: 24px;
+	}
+	
+	.home_section_action a {
+	margin-bottom: 16px;
+	}
+	
+	.home_advantages_hexagon {
+	display: none;
+	}
+	
+	.home_advantages_laptop_wrap {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 58.5%;
+	margin-bottom: 48px;
+	}
+	
+	.home_advantages_laptop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+	
+	.home_advantages_video {
+	display: none;
+	}
+	}
+
 .hexagon_wrap {
 	position: relative;
 }
@@ -514,7 +641,7 @@ div {
 	position: relative;
 }
 .subscription_title {
-	color: var(--brand_color);
+	color: var(--brand-color);
 	font-size: 32px;
 	line-height: 40px;
 }
@@ -641,7 +768,7 @@ div {
 	margin: 0;
 	padding: 0;
 	--swiper-pagination-bullet-horizontal-gap: 8px;
-	--swiper-pagination-color: var(--brand_color);
+	--swiper-pagination-color: var(--brand-color);
 	--swiper-pagination-bullet-inactive-color: grey;
 	--swiper-pagination-bullet-inactive-opacity: 1;
 	align-items: center;
@@ -941,8 +1068,6 @@ div {
 	}
 }
 
-
-
 /* download-page css */
 .download-section {
 	margin-top: 150px;
@@ -1131,46 +1256,6 @@ div {
 	padding-top: 25px;
 }
 
-/* For screens smaller than 768px */
-@media (max-width: 767px) {
-  .welcome-section-cloud {
-    height: auto;
-    padding-top: 64px;
-  }
-
-  .welcome-section-title {
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 16px;
-  }
-
-  .welcome-section-text {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 96px;
-    width: 100%;
-    max-width: 400px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .welcome-section-more {
-    font-size: 18px;
-    height: auto;
-  }
-
-  .welcome-section-cloud-title {
-    font-size: 24px;
-    line-height: 36px;
-    padding-bottom: 16px;
-  }
-
-  .welcome-text {
-    font-size: 16px;
-    line-height: 22px;
-    padding-top: 16px;
-  }
-}
 
 
 .row {
@@ -1251,83 +1336,6 @@ div {
 	padding: 8px 16px;
 }
 
-@media only screen and (max-width: 1200px) {
-	.welcome-section {
-		height: 604px;
-	}
-}
-
-@media only screen and (max-width: 992px) {
-	.welcome-section {
-		height: 504px;
-		padding-top: 120px;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.welcome-section {
-		height: 404px;
-		padding-top: 80px;
-	}
-}
-
-@media only screen and (max-width: 576px) {
-	.welcome-section {
-		height: 304px;
-		padding-top: 60px;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.welcome-section-title {
-		font-size: 36px;
-		line-height: 42px;
-		margin-bottom: 24px;
-	}
-
-	.welcome-section-text {
-		font-size: 24px;
-		line-height: 32px;
-		margin-bottom: 208px;
-		width: 100%;
-	}
-
-	.welcome-section-more {
-		font-size: 20px;
-		height: 72px;
-	}
-
-	.welcome-cloud-title {
-		font-size: 24px;
-		line-height: 36px;
-		padding-bottom: 16px;
-	}
-
-	.welcome-text {
-		font-size: 16px;
-		line-height: 20px;
-		padding-top: 16px;
-	}
-
-	.how-it-works {
-		margin-top: 80px;
-		font-size: 20px;
-		line-height: 28px;
-	}
-
-	.slide-title {
-		font-size: 24px;
-		line-height: 30px;
-	}
-
-	.slide-text {
-		font-size: 16px;
-		line-height: 22px;
-		margin-top: 12px;
-		margin-bottom: 32px;
-	}
-}
-
 /* welcome-games section */
 
 .text {
@@ -1383,35 +1391,6 @@ section.welcome-games {
 .welcome-games-text {
 	padding-top: 16px;
 }
-
-/* adaptive welcome-games*/
-@media only screen and (max-width: 767px) {
-	.welcome-games {
-	  padding: 32px 16px;
-	}
-  
-	.welcome-games-title {
-	  font-size: 32px;
-	  line-height: 40px;
-	  padding-top: 64px;
-	}
-  
-	.welcome-games-subtitle {
-	  font-size: 20px;
-	  line-height: 28px;
-	  padding-top: 48px;
-	}
-  
-	.welcome-games-wrapper {
-	  margin-top: 32px;
-	}
-  
-	.welcome-games-text {
-	  font-size: 16px;
-	  line-height: 24px;
-	  padding-top: 16px;
-	}
-  }
 
 /* welcome-access section*/
 
@@ -1580,8 +1559,6 @@ section.welcome-games {
 	margin-left: 12px;
 }
 
-
-
 .dropdown-menu-list:hover {
 	display: block;
 }
@@ -1600,9 +1577,7 @@ section.welcome-games {
 	white-space: nowrap;
 
   }
-  
-
-  .ticker-container {
+.ticker-container {
 	position: relative;
 	overflow: hidden;
 	background-color: #000;
@@ -1672,3 +1647,189 @@ section.welcome-games {
 	font-size: 18px;
 	padding-top: 10px;
 }
+
+@media (max-width: 767px) {
+	.header {
+	  height: auto;
+	  padding: 12px;
+	  align-items: center;
+	}
+	
+	.header_left {
+	  width: 50%;
+	  align-items: start;
+	}
+
+	.header_right {
+		justify-content: end;
+	}
+
+	.header_right_divider {
+	  display: none;
+	}
+}
+
+@media only screen and (max-width: 799.98px) {
+	.home_section {
+	    min-height: 524px;
+	    padding: 96px 0 0;
+	}
+	.home_section_action {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.welcome-section {
+		height: 604px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.welcome-section {
+		height: 504px;
+		padding-top: 120px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.welcome-section {
+		height: 404px;
+		padding-top: 80px;
+	}
+	
+	.welcome-section-title {
+		font-size: 36px;
+		line-height: 42px;
+		margin-bottom: 24px;
+	}
+
+	.welcome-section-text {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 208px;
+		width: 100%;
+	}
+
+	.welcome-section-more {
+		font-size: 20px;
+		height: 72px;
+	}
+
+	.welcome-cloud-title {
+		font-size: 24px;
+		line-height: 36px;
+		padding-bottom: 16px;
+	}
+
+	.welcome-text {
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 16px;
+	}
+
+	.how-it-works {
+		margin-top: 80px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.slide-title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.slide-text {
+		font-size: 16px;
+		line-height: 22px;
+		margin-top: 12px;
+		margin-bottom: 32px;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.login-wrapper {
+		display: none;
+	}
+
+	.welcome-games {
+		padding: 32px 16px;
+	}
+
+	.welcome-games-title {
+		font-size: 32px;
+		line-height: 40px;
+		padding-top: 64px;
+	}
+
+	.welcome-games-subtitle {
+		font-size: 20px;
+		line-height: 28px;
+		padding-top: 48px;
+	}
+
+	.welcome-games-wrapper {
+		margin-top: 32px;
+	}
+
+	.welcome-games-text {
+		font-size: 16px;
+		line-height: 24px;
+		padding-top: 16px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.welcome-section {
+		height: 304px;
+		padding-top: 60px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.welcome-section-cloud {
+		height: auto;
+		padding-top: 64px;
+	}
+
+	.welcome-section-title {
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 16px;
+	}
+
+	.welcome-section-text {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 96px;
+		width: 100%;
+		max-width: 400px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.welcome-section-more {
+		font-size: 18px;
+		height: auto;
+	}
+
+	.welcome-section-cloud-title {
+		font-size: 24px;
+		line-height: 36px;
+		padding-bottom: 16px;
+	}
+
+	.welcome-text {
+		font-size: 16px;
+		line-height: 22px;
+		padding-top: 16px;
+	}
+}
+
