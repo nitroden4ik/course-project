@@ -1406,6 +1406,7 @@ section.welcome-games {
 
 /* guide-section */
 .guide-wrap {
+	padding-top: 40px;
 	margin: 80px 0;
 	display: flex;
 	color:white;
@@ -1423,13 +1424,27 @@ section.welcome-games {
 	margin: 0 0 16px;
 }
 
-.guide-sidebar {
+.guide-sidebar-col {
 	display: flex;
 	flex-direction: column;
 	width: 256px;
 	height: calc(56px * 8);
 	margin: 0 16px;
 	}
+.guide-sidebar-col a:first-child {
+	background-color: #222;
+  color: var(--brand-color);
+} 	
+
+.guide-sidebar-col a:nth-child(1),
+.guide-sidebar-col a:nth-child(2) {
+	background-color: black;
+}
+
+.guide-sidebar-col a:nth-child(1):hover,
+.guide-sidebar-col a:nth-child(2):hover {
+	background-color: #222;
+}
 
 .bar-item {
 	padding: 16px 12px;
@@ -1439,6 +1454,7 @@ section.welcome-games {
 
 .bar-item:hover {
 	background-color: #1a1a1a;
+	transition: .3s linear;
 }
 
 .h3-text-title {
@@ -1459,6 +1475,10 @@ section.welcome-games {
 	margin: 24px 0 8px;
 }
 
+.guide-list {
+	margin-bottom: 20px;
+}
+
 .guide-list li {
 	list-style: disc;
 }
@@ -1472,9 +1492,11 @@ section.welcome-games {
 
 .guide-content {
 	margin: 0 16px;
+	padding-left: 40px;
 }
 .guide-btn {
-	margin-top: 10px 0;
+	padding: 8px;
+	width: 100%;
 }
 
 @media only screen and (max-width: 1399.98px){
@@ -1708,5 +1730,48 @@ section.welcome-games {
   }
 
   /* footer adaptive */
+
+	.footerNav__title {
+		display: none;
+	}
+
+	@media screen and (max-width: 990px) {
+		.footer_navs {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			justify-content: space-between;
+			
+		}
+		.footer_navs li {
+			width: 100%;
+			border-bottom: 1px solid #222;
+		}
+
+		.navFaq li:not(:first-child),
+		.navAbout li:not(:first-child),
+		.navDownload li:not(:first-child),
+		.footer_navInfo li:not(:first-child)
+		{
+			display: none;
+				
+		}
+	
+			.footer_navs li {
+				display: none;
+			}
+		
+		.footerNav__title {
+			width: 100%;
+			cursor: pointer;
+			display: flex;
+			color: white;
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 8px;
+			border-bottom: 1px solid #222;
+			justify-content: space-between;
+		}
+	}
 
   
