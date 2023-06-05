@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
       guidedropdownMenu.classList.toggle('show');
     });
   }
-}); // added a missing closing brace and a semicolon here
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   const guidedropdownBtn = document.getElementById('guide-dropdown-btn');
@@ -87,6 +87,9 @@ if (burgerBtn) {
     }
   });
 }
+
+
+
 
 
 
