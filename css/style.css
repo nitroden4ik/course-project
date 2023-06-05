@@ -827,6 +827,10 @@ div {
 	flex-direction: row;
 	padding: 24px 0 24px 20px;
 }
+.footer_navs a:hover, .footerSocialNav a:hover {
+	opacity: 0.5;
+	transition: .3s;
+}
 .footer .navFaq li:not(:first-child) a, .footer .navAbout li:not(:first-child) a, .footer .navDownload li:not(:first-child) a, .footer .navInfo li:not(:first-child) a {
 	color: #999;
 }
