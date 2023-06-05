@@ -1677,7 +1677,7 @@ section.welcome-games {
 		justify-content: center;
 	}
 	.home_section_action, .home_section {
-	  display: flex;
+	  	display: flex;
 		flex-direction: column;
 		width: 70%;
 		margin: 0 auto;
@@ -1685,7 +1685,7 @@ section.welcome-games {
 	}
 	.home_section_video {
 		height: 272px;
-    top: auto;
+    	top: auto;
 	}
 	.home_section {
 		width: 100%;
@@ -1894,8 +1894,115 @@ section.welcome-games {
 		}
 	}
 
-@media (max-width: 570px) {
-	.footer_logo {
-		display: none;
+	@media (max-width: 570px) {
+		.footer_logo {
+			display: none;
+		}
 	}
+
+	@media (max-width: 375px) {
+		.logo {
+			width: 160px;
+	}
+	.white_border_btn {
+		width: 20%;
+	}
+	}
+
+/* mobile */
+
+@media screen and (max-device-width: 412px) {
+
+	.home_advantages_laptop {
+		max-width: 68%;
+
+	}
+	.home_section_startToPlay_wrap {
+		text-align: center;
+		justify-content: center;
+		padding: 0;
+	}
+	.logo {
+		width: 190px;
+	}
+
+	.container {
+		display: block;
+		
+		width: 100%;
+		min-width: 360px;
+	}
+	.white_border_btn {
+		width: 20%;
+	}
+	.white_border_btn {
+		padding: 16px 16px;
+	}
+	.home_advantages {
+		padding: 0;
+	}
+	.home_advantages_wrap{
+		margin: 0;
+		margin-bottom: 0;
+		min-width: 375px;
+	}
+	.homePartners {
+		padding: 0;
+	}
+	.homePartners_title {
+		font-size: 24px;
+	}
+	.home_advantages_colLeft {
+		width: 77%;
+  }
+.home_advantages_colLeft, .home_advantages_colRight {
+	max-width: 100%;
+    order: -1;
+    width: 360px;
 }
+
+img, .home_advantages_video {
+	height: auto;
+	width: auto;
+}
+
+  .btn_white {
+	padding: 12px;
+  }
+  .wall_text {
+	margin-bottom: 24px;
+  }
+  .homePartners_title {
+	margin-bottom: 40px;
+  }
+  .home_section_container_title {
+    font-size: 28px;
+}
+.white_border_btn {
+	padding: 16px 16px;
+}
+.swiper-container {
+	width: 375px;
+}
+.swiper-slide {
+	width: 359px;
+	height: 392px;
+}
+.home_advantages_colRight {
+	width: 360px;
+	padding: 24px 16px 0;
+}
+.green-btn, .btn {
+	font-size: 20px;
+    padding: 16px 32px;
+}
+.homeTryFree {
+	padding: 64px 0 178px;
+}
+.footerSocialNav {
+	width: 100%;
+	justify-content: space-between !important;
+}
+}
+
+
