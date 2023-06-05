@@ -1,12 +1,14 @@
 @font-face {
-	font-family: "Rubik", sans-serif;
+	font-family: "Rubik";
 	src: url('fonts/Rubik-Italic-VariableFont_wght.ttf');
 	font-weight: 400;
+	font-style: italic;
 }
 @font-face {
-	font-family: "Rubik", sans-serif;
+	font-family: "Rubik";
 	src: url('fonts/Rubik-VariableFont_wght.ttf');
 	font-weight: 500;
+	font-style: normal;
 }
 :root {
 	--rubik: "Rubik", sans-serif;
@@ -38,6 +40,7 @@ body {
 	background-color: #111;
 	position: relative;
 	overflow-x: hidden;
+	user-select: none;
 	
 }
 div {
