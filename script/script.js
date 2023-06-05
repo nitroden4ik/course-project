@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
   if (guidedropdownBtn) { // check if the element exists
     guidedropdownBtn.addEventListener('click', function() {
       guidedropdownMenu.innerHTML = `
-      <a href="./guide/games.html">Как начать играть?</a>
-      <a href="./guide/save.html">Как сэкономить</a>
+      <a href=".games.html">Как начать играть?</a>
+      <a href=".save.html">Как сэкономить</a>
       <a href="#">Технологии NVIDIA</a>
       `;
     });
